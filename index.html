@@ -7,21 +7,26 @@
     <link rel="icon" type="image/png" href="recursos/favicon.png" />
     <link rel="stylesheet" type="text/css" href="style.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,400,400i,700,700i|Taviraj" rel="stylesheet">
-    <title>Peanut Hub</title>
+    <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <title>PeanutHub</title>
 </head>
 
 <body>
     <header>
         <img src="recursos/logo.png">
-        <ul>
-            <li class="active"><a href="#">HOME</a></li>
-            <li><a href="mailto:contacto@peanuthub.cl">CONTÁCTANOS</a></li>
+        <ul class="topnav" id="myTopnav">
+            <li><a href="#">HOME</a></li>
+            <li><a href="#">PORTAFOLIO</a></li>
+            <li><a href="#">BLOG</a></li>
+            <li class="icon">
+                <a href="javascript:void(0);" style="font-size:20px;" onclick="myFunction()">☰</a>
+            </li>
         </ul>
     </header>
     <bg-black>
         <content>
             <h1>HACEMOS DE TU FUTURO EL PRESENTE</h1>
-            <span>Somos la solución tecnológica que tu empresa necesitaba.</span>
         </content>
         <img class="compu" src="recursos/compu.jpg">
     </bg-black>
@@ -39,7 +44,6 @@
                 <h4>Widul</h4>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea.</p>
             </block50>
-            <!--
             <block50-black>
                 <img src="recursos/widul.jpg">
                 <h4>Widul</h4>
@@ -50,13 +54,11 @@
                 <h4>Widul</h4>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea.</p>
             </block50>
-            -->
         </content>
     </bg-white>
     <bg-black class="magin-top">
         <content>
             <h2>MASTERMIND</h2>
-            <span>Team</span>
             <flex>
                 <block33>
                     <img src="recursos/sebastian.jpg">
@@ -70,22 +72,32 @@
                 </block33>
                 <block33>
                     <img src="recursos/fabian.jpg">
-                    <h4>FABIAN ELGUETA</h4>
+                    <h4>FABIÁN ELGUETA</h4>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
                 </block33>
             </flex>
         </content>
         <contact>
             <content>
-                <h2>CONTÁCTANOS</h2><a class="btn" href="mailto:contacto@peanuthub.cl">Enviar Correo</a>
+                <h2>CONTACTO</h2><a class="btn" href="#">Enviar Correo</a>
             </content>
         </contact>
         <footer>
             <content>
-                ©2016 Peanut Hub.
+                Copyright 2016
             </content>
         </footer>
     </bg-black>
+    <script>
+    function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+            x.className += " responsive";
+        } else {
+            x.className = "topnav";
+        }
+    }
+    </script>
 </body>
 
 </html>
