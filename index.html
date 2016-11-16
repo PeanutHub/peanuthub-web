@@ -9,18 +9,25 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,400,400i,700,700i|Taviraj" rel="stylesheet">
     <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
     <script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-    <title>PeanutHub</title>
+    <title>Peanut Hub</title>
 </head>
 
 <body>
+
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="http://peanuthub.cl">HOME</a>
+  <!--<a href="#">PORTAFOLIO</a>-->
+  <a href="https://medium.com/peanuthub">BLOG</a>
+</div>
     <header>
         <img src="recursos/logo.png">
         <ul class="topnav" id="myTopnav">
-            <li><a href="#">HOME</a></li>
-            <li><a href="#">PORTAFOLIO</a></li>
-            <li><a href="#">BLOG</a></li>
+            <li><a href="http://peanuthub.cl">HOME</a></li>
+            <!--<li><a href="#">PORTAFOLIO</a></li>-->
+            <li><a href="https://medium.com/peanuthub">BLOG</a></li>
             <li class="icon">
-                <a href="javascript:void(0);" style="font-size:20px;" onclick="myFunction()">☰</a>
+                <a href="javascript:void(0);" style="font-size:20px;" onclick="openNav()">☰</a>
             </li>
         </ul>
     </header>
@@ -32,11 +39,11 @@
     </bg-black>
     <bg-red>
         <content>
-            <h2>Excelencia es parte natural de nuestra esencia</h2>
-            <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</h3>
+            <h2>La excelencia es parte natural de nuestra esencia</h2>
+            <h3>Siempre a la vanguardia tecnológica, Peanut Hub </h3>
         </content>
     </bg-red>
-    <bg-white>
+    <!--<bg-white>
         <content>
             <h2>PROYECTOS REALIZADOS</h2>
             <block50>
@@ -55,47 +62,46 @@
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea.</p>
             </block50>
         </content>
-    </bg-white>
+    </bg-white>-->
     <bg-black class="magin-top">
         <content>
             <h2>MASTERMIND</h2>
             <flex>
                 <block33>
                     <img src="recursos/sebastian.jpg">
-                    <h4>SEBASTIÁN MORENO</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
+                    <h4>SEBASTIÁN MORENO </br> HEAD OF TECHNOLOGY</h4>
+                    <p><b>CREAR</b> TECNOLOGÍA ES UN ARTE TAN SUTIL COMO CREAR UNA OBRA DE <b>ARTE</b></p>
                 </block33>
                 <block33 class="margen">
                     <img src="recursos/david.jpg">
-                    <h4>DAVID MUÑOZ</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
+                    <h4>DAVID MUÑOZ </br> ARQUITECTO DE SOLUCIONES</h4>
+                    <p>ES MUY <b>FÁCIL</b> HACER ALGO COMPLEJO, PERO MUY <b>DIFÍCIL</b> HACERLO SIMPLE</p>
                 </block33>
                 <block33>
                     <img src="recursos/fabian.jpg">
-                    <h4>FABIÁN ELGUETA</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
+                    <h4>FABIÁN ELGUETA </br> DIRECTOR CREATIVO</h4>
+                    <p>PIENSA EN <b>GRANDE</b>, PIENSA <b>SIMPLE</b></p>
                 </block33>
             </flex>
         </content>
         <contact>
             <content>
-                <h2>CONTACTO</h2><a class="btn" href="#">Enviar Correo</a>
+                <h2>CONTACTO</h2><a class="btn" href="mailto:contacto@peanuthub.cl">Enviar Correo</a>
             </content>
         </contact>
         <footer>
             <content>
-                Copyright 2016
+                Peanut Hub Copyright 2016
             </content>
         </footer>
     </bg-black>
     <script>
-    function myFunction() {
-        var x = document.getElementById("myTopnav");
-        if (x.className === "topnav") {
-            x.className += " responsive";
-        } else {
-            x.className = "topnav";
-        }
+    function openNav() {
+       document.getElementById("mySidenav").style.width = "250px";
+    }
+
+    function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
     }
     </script>
 </body>
