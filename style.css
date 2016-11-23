@@ -57,6 +57,7 @@ h1 {
     font-style: italic;
     color: white;
     margin: 0;
+    text-shadow: 0px 3px 4px rgba(0, 0, 0, 1);
 }
 
 h2 {
@@ -248,8 +249,24 @@ block33 h4{
     background-color: #F44336;
     margin: auto;
     text-align: center;
-
+    width: 100%;
+    margin-top: -5px;
+    padding-top: 10px;
 }
+
+block33 span{
+
+    background-color: #F44336;
+    margin: auto;
+    text-align: center;
+    width: 100%;
+    padding-bottom: 10px;
+    font-family: 'Roboto Condensed';
+    font-size: 16px;
+    margin-top: -1px;
+    margin-bottom: 10px;
+}
+
 
 block33 p {
     
@@ -259,8 +276,8 @@ block33 p {
 }
 
 block33 p {
-    margin-bottom: 20px;
-    font-family: 'Taviraj', serif;
+    margin: 10px;
+    font-family: 'Roboto Condensed';
     
 }
 
@@ -323,6 +340,11 @@ footer {
         float: right;
         display: inline-block;
     }
+
+    .compu{
+        display: none;
+    }
+
     .responsive {
         position: relative;
     }
