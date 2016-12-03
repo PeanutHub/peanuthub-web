@@ -225,7 +225,7 @@ block50-black img {
 .magin-top {
     margin-top: -250px;
     color: white;
-    height: 300px;
+    /*height: 300px;*/
     padding-top: 200px;
     display: block;
 }
@@ -242,6 +242,9 @@ block33 {
     width: 30%;
     overflow: hidden;
     line-height: 1.4;
+    border-color: #4c4949;
+    border-style: solid;
+    border-width: 1px;
 }
 
 block33 h4{
